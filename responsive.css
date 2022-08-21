@@ -1,0 +1,432 @@
+/*Media untuk tablet*/
+@media all and (max-width: 1000px) {
+    header{
+        padding: 2% 20px;
+    }
+    .logo{
+        height: 30px;
+    }
+
+    .main{
+        padding:0 2px;
+    }
+    .main h1{
+        margin: 10%;
+    }
+    .main img{
+      height: 120px;
+      width: 120px;
+      top: 220px;
+      left: 60px;
+    }
+    .menu a{
+       position: relative;
+       left: 200px;
+    }
+    .top-wrapper , .biografi {
+        margin-top: 70px;
+    }
+
+    .about-me img{
+        width: 200px;
+        height: 40px;
+    }
+    .about-me h3{
+        font-size:14px;
+    }
+
+    .top-wrapper p{
+        font-family: font-deskripsi;
+        font-size: 9pt;
+    }
+    
+    .deskripsi{
+        font-size: 9pt;
+    }
+    .terbang-1{
+        float: right;
+    }
+    .gambar-satu{
+        width: 40%;
+        height: 30%;
+        position: relative;
+        bottom: 320px;
+        left: 48%;
+
+    }
+    .gambar-dua{
+        width: 20%;
+        height: 30%;
+        position: relative;
+        bottom: 300px;
+        right: 0px;
+    }
+    .biografi{
+        position: relative;
+        bottom: 380px;
+    }
+    .biografi img{
+        width: 200px;
+        height: 40px;
+    }
+    .biografi-icon h3{
+        font-size:14px;
+    }
+
+    .lesson {
+        display: inline-block;
+        margin: 5px 5%;
+        padding-bottom: 180px;
+        height: 150px;
+        width: 25%;
+      }
+    .lesson-icon p {
+        padding: 10px;
+        font-size: 12px;
+    }
+    .lesson img{
+        height: 70px;
+    }
+    .img-sd{
+        width: 100px; 
+    }
+    .lesson-icon h4{
+        font-size: 10px;
+    }
+    
+    table{
+        font-size:12px;
+    }
+
+    /*----------KARYA-----------*/
+    .wrapper-karya{  
+        position: relative;
+        bottom: 350px;
+        margin: 5% 5%;
+    }
+    .contoh-karya{
+        display: flex;
+        overflow: auto;
+        overflow-y: hidden;
+        margin-top: 60px;
+    }
+    .contoh{
+        margin:0 10%;
+        width: 100%;
+        font-size: 8px;
+    }
+    .contoh img{
+        height: 50px;
+        width: 35px;
+    }
+/*----------pendidikan-----------*/
+    .pendidikan{
+        position:relative;
+        bottom: 350px;
+        height:100%;
+        padding: 5% 5%;
+    }
+
+    .pendidikan-icon img{
+       width: 300px;
+       height: 45px; 
+    }
+
+    .about-me h3, .biografi-icon h3, .pendidikan h3{
+        font-size:13px;
+
+    }
+
+    .formal h3 , .informal h3{
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    /*------------------IN-------Formal------------------*/
+    .sertifikat-konten{
+        display: flex;
+        overflow: auto;
+        overflow-y: hidden;
+    }
+    .sertifikat {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        margin:0 8%;
+    }
+    
+    .sertifikat-icon p {
+    font-weight: normal;
+    font-size: 12px;
+    padding-top: 2px;
+    }
+    .img-landscape{
+        height: 150px;
+    }
+    .img-potrait{
+        height: 200px;
+        transition: transform 0.5s; 
+    }
+    .img-potrait:hover , .img-landscape:hover{
+        transform: scale(1.1);
+    }
+
+    .text-sert{
+    font-size: 11px;;
+    }
+    .keterangan{
+    color: white;
+    font-size: 10px;
+    padding-bottom: 10px;
+    margin-top: 2px;
+    }
+    .img-sd{
+        width: 98px;
+    }
+
+    footer{
+        position: relative;
+        bottom: 350px;
+    }
+    .menu-social a{
+        font-size: 13px;
+        border: none;
+        margin: 0;
+    }
+    marquee{
+        font-size: 10px;
+        position: relative;
+        bottom: 350px;
+    }
+
+}
+
+
+
+/*---------------------Media untuk Smarthphone*-------------------*/
+@media all and (max-width: 670px) {
+    header{
+        padding: 2% 20px;
+    }
+    .logo{
+        height: 15px;
+    }
+
+    .main{
+        padding:0 2px;
+        height: 100%;
+    }
+    .main h1{
+        font-size: 15px;
+        margin: 15% 0%
+    }
+    .main img{
+        height:90px;
+        width: 90px;
+        position: relative;
+        top: 150px;
+        left: 30px;
+    }
+    .menu{
+        position: relative;
+        right: 100px;
+    }
+    .menu a{
+        padding: 6px;
+        font-weight: normal;
+        font-size: 9px;
+    }
+
+    .top-wrapper{           /*----------------- kiri------------------*/
+    
+    margin-top: 14%;
+    padding: 1px 20px;
+    width: 90%;
+    box-shadow: 0 0 0 ;  
+    }
+    .top-wrapper:hover , .biografi:hover{
+        box-shadow: 0 0 0;
+    }
+    .top-wrapper p{
+        font-family: font-deskripsi;
+        font-size: 9pt;
+    }
+    
+    .deskripsi{
+        font-size: 6pt;
+        text-align: justify;
+    }
+    .about-me img, .biografi-icon img {
+        width: 150px;
+        height: 25px;
+    }
+    .about-me h3, .biografi-icon h3{
+        font-size:9px;
+
+    }
+
+    .terbang-1{
+        float:right;
+        margin-top: 1px;    
+    }
+    .gambar-satu{
+        display: none;
+    }
+     .gambar-dua{
+        height: 80px;
+        width: 80px;
+        position: relative;
+        bottom: 0px;
+        left: 2%;
+        transition: 0.5s;
+    }
+    .gambar-dua:hover{
+        right: 0%;
+    }
+    .biografi{
+        padding: 1px 10px;           /*----------------- kanan------------------*/
+        width: 70%;
+        box-shadow: 0 0;
+        position:relative;
+        bottom: 80px;
+        margin-right: 0px;
+    }
+    table{
+        font-size: 9px;
+    }
+
+    .ttl{
+        width: 0px;
+    }
+
+    /*----------KARYA-----------*/
+    .wrapper-karya{  
+        position: relative;
+        bottom: 70px;
+    }
+    .contoh-karya{
+        display: flex;
+        overflow: auto;
+        overflow-y: hidden;
+        margin-top: 40px;
+    }
+    .contoh{
+        margin:0 10%;
+        width: 100%;
+        font-size: 8px;
+    }
+    .contoh img{
+        height: 50px;
+        width: 35px;
+    }
+
+    /*----------------Pendidikan---------------------*/
+    .pendidikan{
+        position: relative;
+        bottom: 80px;
+        height: 0px;
+        box-shadow: 0 0;
+    }
+    .pendidikan h3{
+        font-size:10px;
+    }
+    .pendidikan-icon img{
+       width: 200px;
+       height: 30px; 
+    }
+    .lesson {
+        display: inline-block;
+        padding: 1px 5px;
+        width: 100px;
+      }
+    .lesson-icon p {
+        padding:3px;
+        font-size: 9px;
+    }
+    .lesson-icon h4{
+        font-size: 9px;
+        padding-bottom: 5px;
+    }
+    .lesson-icon img{
+        width: 70px;
+        height: 45px;
+    }
+    .formal{
+        font-size: 11px;
+        margin: 0 auto;
+    }
+
+    .formal h3 , .informal h3{
+        font-size: 9px;
+        padding: 2px;
+    }
+    
+     .img-sd{
+        width: 60px;
+        height: 60px; 
+    }
+
+    /*------------------IN-------Formal------------------*/
+    .informal{
+        font-size: 11px;
+        margin: 0 auto;
+        
+    }
+    .sertifikat-konten{
+        display: flex;
+        overflow: auto;
+        overflow-y: hidden;
+    }
+    .sertifikat {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        margin:0 10%;
+        margin-bottom: 10%;
+    }
+    
+    .sertifikat-icon p {
+    font-weight: normal;
+    font-size: 10px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    }
+    .img-landscape{
+        height: 150px;
+    }
+    .img-potrait{
+        height: 200px;
+        transition: transform 0.5s; 
+    }
+    .img-potrait:hover , .img-landscape:hover{
+        transform: scale(1.1);
+    }
+
+    .text-sert{
+    margin: 2px 1px;
+    font-size: 10px;;
+    }
+    .keterangan{
+    font-size: 8px;
+    }
+
+    footer{
+        width: 100%;
+        padding:0 15%;
+        font-size: 8pt;
+        position: relative;
+        top: 650px;
+    }
+    .menu-social{
+        width: 50%;
+    }
+    .menu-social a{
+        border: none;
+        margin-right: 0px;
+    }
+    marquee{
+        font-size: 10px;
+        position: relative;
+        top: 650px;
+    }
+}

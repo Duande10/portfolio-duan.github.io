@@ -1,0 +1,471 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #282c34;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+    position: fixed;
+    z-index: 10;
+    box-shadow: 0px 0px 10px black;
+    padding: 15px;
+}
+
+@font-face {
+    font-family: font-nama;
+    src: url(CreamCake.ttf);
+}
+
+@font-face {
+    font-family: font-deskripsi;
+    src: url(font/deskripsi.otf);
+}
+
+@font-face {
+    font-family: font-p;
+    src: url(font/Bittermilk.ttf);
+}
+
+.logo {
+    width: 20%;
+    height: 10%;
+    box-shadow: 0px 0px 10px #3352a8;
+}
+
+.main {
+    background-image: url(img/cover.jpeg);
+    background-size: cover;
+    float: right;
+    width: 100%;
+    height: 100%;
+    padding: 80px 0 0 100px;
+    box-shadow: 0 0 20px black;
+    margin-left: 50px;
+    display: block;
+}
+
+.cover {
+    opacity: 0.5;
+    position: absolute;
+}
+
+.main img {
+    float: left;
+    height: 200px;
+    width: 200px;
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px slategray;
+    position: relative;
+    top: 100px;
+}
+
+.main h1 {
+    font-family: font-nama;
+    text-align: right;
+    color: rgb(50, 34, 194);
+    font-weight: normal;
+    font-size: 30pt;
+    margin-right: 50px;
+    text-shadow: 0 0 10px royalblue;
+}
+
+h1:hover {
+    text-shadow: 0px 0px 6px #e72e2e;
+}
+
+.menu {
+    float: left;
+    margin-top: 10%;
+    position: relative;
+    bottom: 20px;
+
+}
+
+.menu li {
+    float: left;
+}
+
+.menu a {
+    background-color: rgb(57, 105, 207);
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    background-color: rgba(172, 13, 55, 0.562);
+}
+
+.top-wrapper {
+    /*----------------- kiri------------------*/
+    margin: 7% 3%;
+    float: left;
+    width: 90%;
+    padding: 20px 30px;
+    box-shadow: 0 0 10px black;
+    background-size: cover;
+    text-align: left;
+    transition: transform 0.5s;
+}
+
+.top-wrapper:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #980026;
+    cursor: pointer;
+}
+
+.about-me {
+    position: absolute;
+}
+
+.top-wrapper p {
+    padding-top: 7%;
+    font-family: font-deskripsi;
+    font-size: 20pt;
+    margin-bottom: 0px;
+}
+
+.deskripsi {
+    font-size: 12pt;
+}
+
+.about-me img {
+    width: 300px;
+    height: 50px;
+}
+
+.about-me h3 {
+    position: absolute;
+    top: 0px;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.biografi {
+    /*------------ kanan*-----------------*/
+    float: right;
+    width: 70%;
+    padding: 20px 30px;
+    box-shadow: 0 0 10px black;
+    background-size: cover;
+    text-align: left;
+    transition: transform 0.5s;
+}
+
+.biografi:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #980026;
+    cursor: pointer;
+}
+
+.biografi-icon {
+    position: relative;
+}
+
+.biografi-icon h3 {
+    position: absolute;
+    top: 0px;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.biografi-icon img {
+    width: 300px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+/* gambaaar terbang*/
+.terbang-1 {
+    float: right;
+
+}
+
+.gambar-satu {
+    opacity: 0.8;
+    width: 280px;
+    height: 300px;
+    margin-top: 25%;
+    margin-left: 15%;
+    transition: 0.5s;
+}
+
+.gambar-satu:hover {
+    opacity: 1;
+    cursor: pointer;
+    margin-left: 6%;
+}
+
+.terbang-1 {
+    float: left;
+}
+
+.gambar-dua {
+    float: left;
+    opacity: 0.8;
+    margin-left: 3%;
+    width: 250px;
+    height: 280px;
+    transition: 0.5s;
+}
+
+.gambar-dua:hover {
+    opacity: 1;
+    cursor: pointer;
+    margin-left: 8%;
+}
+
+/*----------------- KARYA------------------*/
+.wrapper-karya {
+    float: right;
+    width: 90%;
+    height: 100%;
+    margin: 3%;
+    box-shadow: 0 0 20px black;
+    padding: 20px 30px;
+}
+
+.contoh-karya {
+    margin-top: 70px;
+}
+
+.contoh {
+    display: inline-block;
+    margin-left: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255);
+    opacity: 0.6;
+    width: 30%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contoh:hover {
+    opacity: 0.8;
+    opacity: 1;
+    box-shadow: 0 0 7px white;
+    cursor: pointer;
+}
+
+.contoh img {
+    width: 150px;
+    height: 100px;
+}
+
+.contoh a {
+    color: black;
+}
+
+
+/*---------------PENDIDIKAN---------------*/
+.pendidikan {
+    float: right;
+    width: 90%;
+    height: 100%;
+    padding: 30px 30px;
+    margin: 5% 5%;
+    box-shadow: 0 0 20px black;
+    text-align: center;
+}
+
+.pendidikan-icon {
+    position: relative;
+}
+
+.pendidikan-icon h3 {
+    position: absolute;
+    top: 0px;
+    padding-left: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.pendidikan-icon img {
+    text-align: center;
+    width: 400px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formal h3,
+.informal h3 {
+    text-align: left;
+    margin-top: 3%;
+    background-color: #980026;
+    padding: 0.5vh;
+}
+
+/* -----------------Logo pendidikan-------------*/
+
+
+.lesson {
+    display: inline-block;
+    margin: 0 0;
+    padding: 0 15px;
+    height: 25%;
+    width: 20%;
+}
+
+.lesson-icon {
+    margin-top: 20px;
+    position: relative;
+    background-color: white;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.lesson-icon:hover {
+    opacity: 1;
+    box-shadow: 0 0 7px white;
+    cursor: pointer;
+}
+
+.lesson-icon p {
+    color: white;
+    background-color: #980026;
+    padding: 15px;
+}
+
+.lesson img {
+    height: 150px
+}
+
+.img-sd {
+    width: 200px;
+    height: 80px;
+}
+
+.lesson-icon h4 {
+    color: #980026;
+    padding-bottom: 20px;
+}
+
+.lesson-icon img {
+    height: 100px;
+    width: 190px;
+}
+
+/*------------SERTIFIKAT--------------------*/
+
+
+.sertifikat {
+    display: inline-block;
+    margin: 0 2%;
+    height: 10%;
+    width: 20%;
+
+}
+
+.sertifikat-icon {
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.sertifikat-icon:hover {
+    opacity: 1;
+    box-shadow: 0 0 7px white;
+    background-color: #980026;
+    cursor: pointer;
+}
+
+.sertifikat-icon p {
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 13px;
+}
+
+.sertifikat-icon img {
+    width: 200px;
+    height: 120px;
+}
+
+.img-landscape {
+    height: 180px;
+    transition: transform 0.5s;
+}
+
+.img-landscape:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.img-potrait {
+    height: 200px;
+    transition: transform 0.5s;
+}
+
+.img-potrait:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.text-sert {
+    color: aqua;
+    padding-bottom: 0px;
+    font-size: 14px;
+}
+
+.keterangan {
+    color: white;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+footer {
+    float: left;
+    width: 100%;
+    margin-top: 3%;
+    box-shadow: 0 0 20px black;
+    font-size: 10pt;
+    padding: 20px 35%;
+}
+
+.menu-social {
+    float: left;
+    margin-top: 2%;
+    text-align: left;
+    width: 50%;
+}
+
+.menu-social p {
+    padding: 0px;
+}
+
+.menu-social a {
+    font-size: 15px;
+    margin: 5% 2%;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.menu-social a:hover {
+    box-shadow: 0 0 3px 3px #980026;
+    border: 2px solid #980026;
+}
+
+.fa {
+    width: 15px;
+}
